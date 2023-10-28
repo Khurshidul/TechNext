@@ -1,0 +1,122 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+:root {
+  --bg-clr1: rgb(6, 110, 28);
+  --bg-clr2: rgb(197, 27, 8);
+  --bg-clr3: rgb(5, 125, 131);
+  --clr: white;
+  --pad: 2px 5px;
+  --fontWeight: 400;
+}
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2px;
+  row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.cardsData {
+  width: 350px;
+  height: 350px;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px rgb(244, 241, 241);
+  border: 1px solid rgb(215, 213, 213);
+  border-radius: 8px;
+}
+img {
+  width: 180px;
+  height: 180px;
+}
+.success {
+  background-color: var(--bg-clr1);
+  color: var(--clr);
+  padding: var(--pad);
+  font-weight: var(--fontWeight);
+}
+.failed {
+  background-color: var(--bg-clr2);
+  color: var(--clr);
+  color: var(--clr);
+  padding: var(--pad);
+  font-weight: var(--fontWeight);
+}
+.pages {
+  border: 2px solid rgb(206, 205, 205);
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.pages button {
+  margin-right: 0.5rem;
+  outline: none;
+  padding: 3px 5px;
+  border: none;
+  border-left: 2px solid #d0cbcb;
+  border-right: 2px solid #d0cccc;
+  color: var(--bg-clr3);
+}
+.pages button:hover {
+  background-color: var(--bg-clr3);
+  line-height: 20px;
+  color: var(--clr);
+  transition: 0.5s;
+}
+.search-Result h1 {
+  margin-top: 2rem;
+  color: var(--bg-clr3);
+  font-weight: var(--fontWeight);
+  text-align: center;
+  border-bottom: 1px solid var(--bg-clr3);
+}
+@media only screen and (max-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+  .cardsData {
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgb(244, 241, 241);
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 8px;
+  }
+  img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+  }
+  .cardsData {
+    width: 280px;
+    height: 320px;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgb(244, 241, 241);
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 8px;
+  }
+  img {
+    width: 140px;
+    height: 140px;
+  }
+}
